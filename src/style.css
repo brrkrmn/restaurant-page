@@ -1,0 +1,95 @@
+body {
+    margin: 0px;
+    background-color: black;
+}
+
+@font-face {
+    font-family: "GreatVibes";
+    src: url('./GreatVibes-Regular.ttf') format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "MoonDance";
+    src: url("./MoonDance-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sidebar {
+    background: url("./rest.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 40vw;
+}
+
+.text-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-container {
+    width: 450px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.home-button,
+.menu-button,
+.contact-button {
+    width: 100px;
+    height: 30px;
+
+    border-style: none;
+    border-radius: 8px;
+    background-color: #c87d4d;
+
+    color: #fbe2cd;
+    font-family: "MoonDance", cursive;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.home-button:hover,
+.menu-button:hover,
+.contact-button:hover {
+    background-color: #fbe2cd;
+    color: #c87d4d;
+}
+
+.title {
+    margin: 0px;
+    margin-top: 60px;
+    padding: 40px 0px;
+    text-align: center;
+    font-family: "GreatVibes", cursive;
+    color: #ffb67e;
+    font-size: 80px;
+}
+
+.restaurant-info {
+    margin: 0px;
+    max-width: 500px;
+    color: #fbe2cd;
+    font-family: "MoonDance", cursive;
+    font-size: 30px;
+    flex-wrap: wrap;
+}
+
+.plate {
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+}
